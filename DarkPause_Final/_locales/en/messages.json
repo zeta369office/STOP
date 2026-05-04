@@ -1,0 +1,20 @@
+{
+  "app_name": {
+    "message": "DarkPause Pro"
+  },
+  "save_success": {
+    "message": "Settings saved successfully!"
+  },
+  "audio_uploaded": {
+    "message": "Audio file uploaded!"
+  },
+  "label_interval": {
+    "message": "Interval (min)"
+  },
+  "label_duration": {
+    "message": "Duration (sec)"
+  },
+  "btn_save": {
+    "message": "Save Settings"
+  }
+}

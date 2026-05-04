@@ -1,0 +1,29 @@
+﻿{
+  "manifest_version": 3,
+  "name": "DarkPause Pro",
+  "version": "1.0.0",
+  "permissions": ["storage", "alarms", "offscreen", "commands"],
+  "host_permissions": ["<all_urls>"],
+  "action": { 
+    "default_popup": "src/options/options.html",
+    "default_icon": {
+      "16": "assets/favicon-96x96.png",
+      "48": "assets/web-app-manifest-192x192.png",
+      "128": "assets/web-app-manifest-512x512.png"
+    }
+  },
+  "icons": {
+    "16": "assets/favicon-96x96.png",
+    "48": "assets/web-app-manifest-192x192.png",
+    "128": "assets/web-app-manifest-512x512.png"
+  },
+  "background": { 
+    "service_worker": "src/background/service-worker.js", 
+    "type": "module" 
+  },
+  "content_scripts": [{ 
+    "matches": ["<all_urls>"], 
+    "js": ["src/content/overlay.js"] 
+  }],
+  "default_locale": "zh_TW"
+}
